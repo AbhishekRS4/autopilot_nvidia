@@ -1,0 +1,25 @@
+{
+    "data" : {
+              "data_dir" : "/home/abhishek/autopilot_nvidia/data/"
+             },
+    "model" : {
+               "data_format" : "channels_first"
+              },
+    "training" : {
+                  "learning_rate" : 0.0001,
+                  "num_epochs" : 250,
+                  "batch_size" : 128,
+                  "weight_decay" : 0.001,
+                  "checkpoint_epoch" : 2
+                 },
+    "checkpoint" : {
+                     "model_dir" : "model_",
+                     "model_file" : "autopilot",
+                     "model_metrics" : "metrics.npy"
+                   },
+    "inference" : {
+                   "data_dir" : "/home/abhishek/autopilot_nvidia/data/",
+                   "which_checkpoint_model" : 250,
+                   "which_set" : "valid"
+                  }
+}
