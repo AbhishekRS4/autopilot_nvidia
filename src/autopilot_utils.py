@@ -4,8 +4,8 @@ import os
 import json
 import numpy as np
 import tensorflow as tf
-from sklearn.model_selection import train_test_split
 from sklearn.utils import shuffle
+from sklearn.model_selection import train_test_split
 
 # read the json file and return the content
 def read_config_file(json_file_name):
